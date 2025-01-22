@@ -10,7 +10,7 @@ import requests
 #   - A list of commit data (dict) if successful.
 #   - Example: [{"sha": "abc123", "author": "johndoe", "message": "Initial commit", "date": "2023-01-01T00:00:00Z"}]
 #   - On failure, should log an error and return None.
-def fetch_commit_data(repo_owner, repo_name, access_token):
+def fetch_commit_data(repo_owner: str, repo_name: str, access_token: str) -> list[dict]:
     """
     1. Build the URL for the GitHub API endpoint for fetching commits.
        Example URL: 'https://api.github.com/repos/{repo_owner}/{repo_name}/commits'
@@ -33,7 +33,7 @@ def fetch_commit_data(repo_owner, repo_name, access_token):
        Example output:
        [{"sha": "abc123", "author": "johndoe", "message": "Initial commit", "date": "2023-01-01T00:00:00Z"}]
     """
-    
+    pass
 
 # Function: display_commits
 # Purpose: Display fetched commit data in a human-readable format.
