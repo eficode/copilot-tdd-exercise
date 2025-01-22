@@ -14,7 +14,7 @@ Welcome to the TDD Tetris project. This repository demonstrates how to build a s
 7. First 5 Test Cases  
 8. Next Features to Implement  
 9. Using TDD with Copilot  
-10. Contributing  
+10. Continuous Integration
 
 ---
 
@@ -138,3 +138,29 @@ Example flow:
 - In board.py, implement the Board class with the required attributes.  
 - Re-run tests until the failure is resolved.  
 - Move to the next test.
+
+---
+
+## 10. Continuous Integration
+
+[![Python Tests](https://github.com/[your-username]/tdd-tetris/actions/workflows/CI.yml/badge.svg)](https://github.com/[your-username]/tdd-tetris/actions/workflows/CI.yml)
+
+This project uses GitHub Actions for continuous integration. The pipeline:
+
+- Triggers on pushes to `main` and pull requests
+- Runs on Ubuntu latest
+- Sets up Python 3.13
+- Installs project dependencies
+- Runs all tests in the `tests/` directory
+
+To see the pipeline status, click the badge above or check the Actions tab in the repository.
+
+### Prerequisites
+- Python 3.13
+- pip package manager
+- pytest
+
+### Local Setup
+```bash
+python -m pip install -r requirements.txt
+pytest tests/
